@@ -1,0 +1,14 @@
+ #include<iostream>
+
+ using namespace std;
+
+ int main()
+ {
+     int f,c;
+     cout<<"Input: \n"<<"C = ";
+     cin>>c;
+
+     f = 1.8*c + 32;
+     cout<<"Output: \n"<<f<<endl;
+     return 0;
+}
