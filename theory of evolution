@@ -1,0 +1,22 @@
+import random
+def evolve(x):
+    ind=random.randint(0,len(x)-1)
+    #print(ind)
+    
+    p=random.randint(0,100)# end can be any value
+    #print(p)
+    if(p==1):
+        if(x[ind]=='0'):
+            x[ind]='1'
+        else:
+            x[ind]='0'
+
+with open("file1.txt") as myfile:
+    x=myfile.read() #create a text file named file1.This is an example of simple text. and input dna data in the form of 1's and 0's.... save it in the same directory where u saved your python files.
+    x=list(x)
+    print(x)
+    n=int(input("enter number of iterations: "))
+    for i in range(0,n):
+        evolve(x)
+        #print(x)
+print("mutated dna", x)
